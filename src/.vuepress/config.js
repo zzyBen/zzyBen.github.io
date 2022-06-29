@@ -12,7 +12,7 @@ module.exports = {
       { text: "About", link: "/about/" },
       { text: "Projects", link: "/projects/" },
       { text: "Guide", link: "/guide/" },
-      { text: "GitHub", link: "https://github.com/mtobeiyf/vuepress-homepage" }
+      { text: "GitHub", link: "https://github.com/zzyBen" }
     ],
     sidebar: {
       '/guide/': genSidebarConfig('Guide')
@@ -25,7 +25,8 @@ module.exports = {
     anchor: { permalink: false },
     extendMarkdown: md => {
       md.use(require("markdown-it-katex"));
-    }
+    },
+    lineNumbers: true
   }
 };
 
